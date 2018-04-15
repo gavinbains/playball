@@ -88,12 +88,14 @@ public class FirebaseResponse {
 		
 		StringBuilder result = new StringBuilder();
 		
-		result.append( FirebaseResponse.class.getSimpleName() + "[ " )
-				.append( "(Success:" ).append( this.success ).append( ") " )
-				.append( "(Code:" ).append( this.code ).append( ") " )
-				.append( "(Body:" ).append( this.body ).append( ") " )
-				.append( "(Raw-body:" ).append( this.rawBody ).append( ") " )
-				.append( "]" );
+//		result.append( FirebaseResponse.class.getSimpleName() + "[ " )
+//				.append( "(Success:" ).append( this.success ).append( ") " )
+//				.append( "(Code:" ).append( this.code ).append( ") " )
+//				.append( "(Body:" ).append( this.body ).append( ") " )
+//				.append( "(Raw-body:" ).append( this.rawBody ).append( ") " )
+//				.append( "]" );
+		
+		result.append(this.rawBody);
 		
 		return result.toString();
 	}
